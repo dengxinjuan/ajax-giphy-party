@@ -13,7 +13,7 @@ function appendImg(result){
 async function getGif(){
     let searchTerm = $("#searchterm").val();
     $("#searchterm").val("");
-const result = await axios.get("http://api.giphy.com/v1/gifs/search", {
+const result = await axios.get("https://api.giphy.com/v1/gifs/search", {
     params: {
       q: searchTerm,
       api_key: "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym"
